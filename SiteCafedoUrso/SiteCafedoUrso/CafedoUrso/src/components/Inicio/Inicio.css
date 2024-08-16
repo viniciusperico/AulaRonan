@@ -1,0 +1,67 @@
+.Inicio {
+    height: 100vh;
+    background-image: url('./src/assets/Imagens/home-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Inicio section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 6rem;
+}
+
+.content p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+    font-family: 'Roboto', serif; 
+    
+}
+
+.content p span{
+    color: #583926;
+    font-size: 2.5rem;
+    font-weight: bold;
+        font-family: 'Roboto', serif; 
+
+}
+
+.Inicio button {
+    background-color: #8F684D; 
+    color: white;             
+    border: none;             
+    padding: 10px 20px;       
+    text-align: center;        
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 16px;          
+    border-radius: 5px;       
+    cursor: pointer;           
+    transition: background-color 0.3s;
+    font-family: 'Roboto', serif; 
+
+}
+
+.Inicio button:hover {
+    background-color: #DAA520;
+}
+
+.logo-principal{
+    height: 6rem;
+}
+

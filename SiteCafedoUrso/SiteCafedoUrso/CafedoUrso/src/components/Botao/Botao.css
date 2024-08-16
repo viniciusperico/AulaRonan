@@ -1,0 +1,28 @@
+.botao-container{
+
+    background-color: var(--cor-principal);
+    padding: 25px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-menu {
+    background-color: #DAA520;   
+    color: white;             
+    border: none;             
+    padding: 10px 20px;       
+    text-align: center;        
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 16px;          
+    border-radius: 5px;       
+    cursor: pointer;           
+    transition: background-color 0.3s;
+    font-family: 'Roboto', serif; 
+
+}
+
+.botao-menu:hover {
+    background-color: #8F684D;
+}
