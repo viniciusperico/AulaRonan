@@ -32,7 +32,7 @@ function App() {
             titulo="Café Espresso"
           />
           <Cartao
-            descricao="Um texto descritivo"
+            descricao="Um atexto descritivo"
             imagem=".\src\assets\Imagens\menu-cafe-1.png"
             titulo="Café Espresso"
           />
