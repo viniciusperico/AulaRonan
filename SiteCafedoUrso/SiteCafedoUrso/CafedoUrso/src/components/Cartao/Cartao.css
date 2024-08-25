@@ -9,7 +9,7 @@
 }
 
 .conteudo-menu {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     box-sizing: border-box;
     background-color: var(--cor-principal);
@@ -17,6 +17,8 @@
     overflow: hidden;
     background-color: #583926;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    flex-wrap: wrap; 
 
 }
 
@@ -36,16 +38,18 @@
     margin: 10px 0;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-
+    /* padding: 0 40px; */
 }
 
 .conteudo-menu p {
     font-size: 0.8rem;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-
+    word-wrap: break-word;
+    max-width: 200px;
+    text-align: center;
 }
 
-.conteudo-menu:hover{
-
+.conteudo-menu div {
+    padding: 0 20px;
 }

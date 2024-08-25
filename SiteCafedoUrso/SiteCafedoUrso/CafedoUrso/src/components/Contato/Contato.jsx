@@ -1,21 +1,40 @@
 import React, { useState } from 'react';
+import { db } from '../../database/firebaseConfig.js';
+import { collection, addDoc } from 'firebase/firestore'; 
 import './Contato.css';
 
 const Contato = () => {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
+    const [status, setStatus] = useState(''); 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(`Obrigado pela mensagem, ${nome}!`);
-    
+
+        try {
+            // Referência para a coleção de contatos
+            const docRef = await addDoc(collection(db, 'contatos'), {
+                nome: nome,
+                email: email,
+                mensagem: mensagem,
+            });
+
+            setStatus('Mensagem enviada com sucesso!');
+            setNome('');
+            setEmail('');
+            setMensagem('');
+        } catch (error) {
+            console.error('Erro ao enviar a mensagem', error);
+            setStatus('Erro ao enviar a mensagem.');
+        }
     };
 
     return (
         <div className='contato-global'>
             <div className="contato-container">
                 <h2>Mande uma mensagem para gente! :)</h2>
+                {status && <p>{status}</p>} {/* Exibindo mensagem de feedback */}
                 <div className="contato-content">
                     <form onSubmit={handleSubmit} className="contato-form">
                         <div className="form-group">

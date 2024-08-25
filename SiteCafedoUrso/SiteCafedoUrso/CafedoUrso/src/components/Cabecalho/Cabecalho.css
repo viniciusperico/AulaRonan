@@ -47,7 +47,6 @@
     width: 30px; 
     height: 30px; 
     margin-right: 10px; 
-    border-radius: 50%; 
     transition: transform 0.3s;
 }
 
@@ -55,3 +54,13 @@
 transform: scale(1.1); 
 }
 
+.icon-adm{
+    width: 32px; 
+    height: 32px; 
+    margin-right: 10px; 
+    transition: transform 0.3s;
+}
+
+.icon-adm:hover{
+transform: scale(1.1); 
+}
