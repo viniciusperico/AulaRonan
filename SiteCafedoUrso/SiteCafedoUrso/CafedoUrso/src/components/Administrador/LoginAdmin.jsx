@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { db } from "../../database/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 import "./LoginAdmin.css";
+import Cabecalho from "../Cabecalho/Cabecalho";
 
 const FormCadastro = () => {
   const [titulo, setTitulo] = useState("");
@@ -27,6 +28,8 @@ const FormCadastro = () => {
   };
 
   return (
+    <>
+    <Cabecalho/>
     <body class="pag-incluir-cards">
       <form className="incluir-cards" onSubmit={handleSubmit}>
         <h3>INCLUSÃO DE CARDS NA PAGINA INICIAL</h3>
@@ -54,6 +57,7 @@ const FormCadastro = () => {
         <button type="submit">Adicionar Card</button>
       </form>
     </body>
+    </>
   );
 };
 

@@ -26,7 +26,7 @@ function Cabecalho() {
                 <a href="">
                     <img src="./src/assets/Icones/icon-whatsapp.png" className="icon-rede-social" />
                 </a>
-                <a href="/login">
+                <a href="/administrador">
                     
                     <img src="https://img.icons8.com/?size=32&id=YIZ59MTJsuUz&format=png&color=ffffff" className="icon-adm" />
                 </a>
